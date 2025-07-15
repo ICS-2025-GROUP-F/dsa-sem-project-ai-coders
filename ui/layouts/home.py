@@ -35,4 +35,7 @@ def init_ui(app):
         command=load_view
     )
     segmented.pack(pady=10, padx=20)
-    segmented.set("Register")  # Load default
+    segmented.set("Register")  # Set default selection
+    
+    # Explicitly load the default view immediately
+    load_view("Register")
